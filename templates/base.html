@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+  
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../static/css/main.css">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}">
+  
+  <script>
+  var _gaq = _gaq || [];  
+  _gaq.push(['_setAccount', 'UA-47291724-2']);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+</script>
+{% endblock %}
+</head>
+<body class ="boddy">
+  {% block navbar %}
+  {% endblock %}
+  <div class="container">
+
+    <div class="row rowMargin">
+
+     <!--  <div class="textAlignment">
+        <img src="../static/img/joey.jpg" alt="Sexy Pic" class="img-circle profPic">
+        <div class="description">
+          <p> I'm a senior computer science major at Creighton University. I live in Omaha, NE.  You can  <a href="mailto:joeterskine@gmail.com">email me.</a> /p>
+          <p class="linkSpacing"> <a href="/projects"> Projects </a>    •   <a href="https://twitter.com/joeterskine">Twitter</a>    •   <a href="https://github.com/jterskine">Github</a>    •   <a href="https://gimmebar.com/loves/jfresh">GimmeBar</a>    •  <a href="http://www.youtube.com/watch?v=dQw4w9WgXcQ"> Myspace </a></p>
+        </div>
+      </div> -->
+<!--
+        
+
+            
+            <p> Side <a href="/projects"> project(s) </a></p> 
+            <p>  <a href="/">Home </a>
+              <p> <a href="https://twitter.com/joeterskine"><img class="icons" src="../static/img/twitterBird.png"></a> 
+                <a href="https://github.com/jterskine"><img class="icons" src="../static/img/github.png"></a> 
+                <a href="https://gimmebar.com/loves/jfresh"><img class="icons" src="../static/img/gimmebar.png"></a> 
+                <a href="http://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="icons" src="../static/img/myspace.png"></a></p>
+              </div> -->
+              {% block content %}
+
+              {% endblock %}
+
+            </div>
+          </div>
+          <hr>
+          {% block footer %}
+          <footer> 
+          </footer>
+          {% endblock %}
+        </div>
+        {% block js_footer %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        {% endblock %}
+      </body>
+      </html>

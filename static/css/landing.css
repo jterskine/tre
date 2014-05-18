@@ -1,0 +1,16 @@
+.magPics {
+	width: 140px;
+	height: 100px;
+	position: relative;
+	left: 75px;
+}
+
+.tagLine {
+	position: relative;
+	left: 75px;
+}
+
+.midButton {
+	position: relative;
+	left: 85px;
+}

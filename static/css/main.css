@@ -1,0 +1,42 @@
+.icons {
+	height: 25px;
+	width: 25px;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+}
+
+.boddy {
+	font-family: 'Karla', sans-serif;
+}
+
+.rowMargin {
+	margin: 40px 0 20px;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+}
+
+.profPic {
+	width: 262px;
+	height: 262;
+}
+
+.description {
+	margin-top: 75px;
+}
+
+.textAlignment {
+	text-align: center;
+}
+
+.linkSpacing {
+	padding: 2px;
+}
+
+a {
+	padding: 5px;
+}
